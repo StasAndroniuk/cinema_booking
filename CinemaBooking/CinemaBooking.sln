@@ -11,13 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaBooking.Infrustructure", "CinemaBokking.Infrustructure\CinemaBooking.Infrustructure.csproj", "{85B57FF5-9CFB-43EB-9070-4700B8639E1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaBooking.Api", "CinemaBooking.Api\CinemaBooking.Api.csproj", "{C11BA131-3AD9-483B-8494-697C9B81E67D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaBooking.Api", "CinemaBooking.Api\CinemaBooking.Api.csproj", "{C11BA131-3AD9-483B-8494-697C9B81E67D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{981995E2-414A-4BD0-96D4-BAE008B0CFA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaBooking.Domain", "CinemaBooking.Domain\CinemaBooking.Domain.csproj", "{CEF16F3C-C129-4C60-9187-A776C080B05A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaBooking.Domain", "CinemaBooking.Domain\CinemaBooking.Domain.csproj", "{CEF16F3C-C129-4C60-9187-A776C080B05A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaBooking.Repository", "CinemaBooking.Repository\CinemaBooking.Repository.csproj", "{299CFEF1-76B8-41EA-BCD3-5B1100D373C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaBooking.Repository", "CinemaBooking.Repository\CinemaBooking.Repository.csproj", "{299CFEF1-76B8-41EA-BCD3-5B1100D373C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinemaBooking.Tests", "CinemaBooking.Tests\CinemaBooking.Tests.csproj", "{6C22A872-3970-4395-B3D1-FA8023C1D848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaBooking.Application", "CinemaBooking.Application\CinemaBooking.Application.csproj", "{6435D6D3-7344-4D0E-B326-AB5CC1390ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaBooking.Contract.Api", "CinemaBooking.Contract.Api\CinemaBooking.Contract.Api.csproj", "{18EC3003-61B7-4556-9ACE-38AC3256D3ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,18 @@ Global
 		{299CFEF1-76B8-41EA-BCD3-5B1100D373C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299CFEF1-76B8-41EA-BCD3-5B1100D373C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299CFEF1-76B8-41EA-BCD3-5B1100D373C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C22A872-3970-4395-B3D1-FA8023C1D848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C22A872-3970-4395-B3D1-FA8023C1D848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C22A872-3970-4395-B3D1-FA8023C1D848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C22A872-3970-4395-B3D1-FA8023C1D848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6435D6D3-7344-4D0E-B326-AB5CC1390ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6435D6D3-7344-4D0E-B326-AB5CC1390ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6435D6D3-7344-4D0E-B326-AB5CC1390ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6435D6D3-7344-4D0E-B326-AB5CC1390ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EC3003-61B7-4556-9ACE-38AC3256D3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EC3003-61B7-4556-9ACE-38AC3256D3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EC3003-61B7-4556-9ACE-38AC3256D3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EC3003-61B7-4556-9ACE-38AC3256D3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +67,8 @@ Global
 		{C11BA131-3AD9-483B-8494-697C9B81E67D} = {AD08C4C1-5E4D-4246-978D-BDB462CEB597}
 		{CEF16F3C-C129-4C60-9187-A776C080B05A} = {CD26845E-3B5B-41D6-B397-4F7A6DD48C0E}
 		{299CFEF1-76B8-41EA-BCD3-5B1100D373C2} = {5A10C208-E175-4EA2-9E1C-F3C973EBC525}
+		{6C22A872-3970-4395-B3D1-FA8023C1D848} = {981995E2-414A-4BD0-96D4-BAE008B0CFA0}
+		{18EC3003-61B7-4556-9ACE-38AC3256D3ED} = {CD26845E-3B5B-41D6-B397-4F7A6DD48C0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B390296-7740-429E-AFC8-AED988AA3EE5}

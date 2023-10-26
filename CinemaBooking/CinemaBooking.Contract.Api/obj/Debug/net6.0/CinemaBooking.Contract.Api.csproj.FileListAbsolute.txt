@@ -1,0 +1,11 @@
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\bin\Debug\net6.0\CinemaBooking.Contract.Api.deps.json
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\bin\Debug\net6.0\CinemaBooking.Contract.Api.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\bin\Debug\net6.0\CinemaBooking.Contract.Api.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.AssemblyInfoInputs.cache
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.AssemblyInfo.cs
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.csproj.CoreCompileInputs.cache
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\refint\CinemaBooking.Contract.Api.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\CinemaBooking.Contract.Api.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Contract.Api\obj\Debug\net6.0\ref\CinemaBooking.Contract.Api.dll

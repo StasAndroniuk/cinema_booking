@@ -1,0 +1,17 @@
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.csproj.AssemblyReference.cache
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.AssemblyInfoInputs.cache
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.AssemblyInfo.cs
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.csproj.CoreCompileInputs.cache
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Application.deps.json
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Application.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Application.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Domain.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Infrustructure.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Infrustructure.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\bin\Debug\net6.0\CinemaBooking.Domain.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.csproj.CopyComplete
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\refint\CinemaBooking.Application.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\CinemaBooking.Application.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Application\obj\Debug\net6.0\ref\CinemaBooking.Application.dll

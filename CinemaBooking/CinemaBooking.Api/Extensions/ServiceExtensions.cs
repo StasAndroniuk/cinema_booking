@@ -1,5 +1,12 @@
-﻿using CinemaBooking.Repository.Context;
+﻿using CinemaBooking.Domain;
+using CinemaBooking.Repository.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+using CinemaBooking.Api.Mappers;
+using CinemaBooking.Infrustructure;
+using CinemaBooking.Repository;
+using CinemaBooking.Infrustructure.Services;
+using CinemaBooking.Application.Movies;
 
 namespace CinemaBooking.Api.Extensions
 {
@@ -12,7 +19,24 @@ namespace CinemaBooking.Api.Extensions
 
         public static void ConfigureDbContext(this IServiceCollection services)
         {
-            services.AddDbContext<CinemaDbContext>(options => options.UseInMemoryDatabase("CinemaDb"));
+            services.AddDbContext<CinemaDbContext>(options => options.UseInMemoryDatabase(Constants.DatabaseName));
+        }
+
+        public static void ConfigureApplicationServices(this IServiceCollection services)
+        {
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IMovieService, MovieService>();
+        }
+
+        public static void ConfigureMappers(this IServiceCollection services)
+        {
+            services.AddAutoMapper(
+                mapperConfigurationExpression =>
+                {
+                    mapperConfigurationExpression.AddProfile<DomainToContractMapperProfile>();
+                    mapperConfigurationExpression.AddProfile<ContractToDomainProfile>();
+                },
+                Array.Empty<Assembly>());
         }
     }
 }

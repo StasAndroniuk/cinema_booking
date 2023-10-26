@@ -87,6 +87,12 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\CinemaBooking.Application.csproj": {
+                "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\CinemaBooking.Application.csproj"
+              },
+              "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\CinemaBooking.Contract.Api.csproj": {
+                "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\CinemaBooking.Contract.Api.csproj"
+              },
               "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Repository\\CinemaBooking.Repository.csproj": {
                 "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Repository\\CinemaBooking.Repository.csproj"
               }
@@ -103,6 +109,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -123,6 +137,120 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\CinemaBooking.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\CinemaBooking.Application.csproj",
+        "projectName": "CinemaBooking.Application",
+        "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\CinemaBooking.Application.csproj",
+        "packagesPath": "C:\\Users\\stass\\.nuget\\packages\\",
+        "outputPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stass\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBokking.Infrustructure\\CinemaBooking.Infrustructure.csproj": {
+                "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBokking.Infrustructure\\CinemaBooking.Infrustructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\CinemaBooking.Contract.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\CinemaBooking.Contract.Api.csproj",
+        "projectName": "CinemaBooking.Contract.Api",
+        "projectPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\CinemaBooking.Contract.Api.csproj",
+        "packagesPath": "C:\\Users\\stass\\.nuget\\packages\\",
+        "outputPath": "D:\\TestTask\\cinema_booking\\CinemaBooking\\CinemaBooking.Contract.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\stass\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

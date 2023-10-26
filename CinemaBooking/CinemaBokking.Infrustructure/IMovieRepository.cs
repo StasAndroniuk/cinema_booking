@@ -41,7 +41,7 @@ namespace CinemaBooking.Infrustructure
         /// <param name="movie"><see cref="Movie"/>.</param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
         /// <returns><see cref="Task"/></returns>
-        Task UpdateMovie(Movie movie, CancellationToken cancellationToken = default);
+        Task UpdateMovieAsync(Movie movie, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Removes specific movie by id.
@@ -49,7 +49,15 @@ namespace CinemaBooking.Infrustructure
         /// <param name="movie">instance of movie to remove.</param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
         /// <returns><see cref="Task"/></returns>
-        Task DeleteMovie(Movie movie, CancellationToken cancellationToken);
+        Task DeleteMovieAsync(Movie movie, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Returns movie by name.
+        /// </summary>
+        /// <param name="name">Movie name</param>
+        /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
+        /// <returns></returns>
+        Task<Movie> TryFindMovieByNameAsync(string name, CancellationToken cancellationToken = default);
 
     }
 }

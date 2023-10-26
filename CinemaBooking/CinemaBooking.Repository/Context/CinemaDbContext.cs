@@ -1,10 +1,6 @@
-﻿using CinemaBooking.Domain.Movies;
+﻿using CinemaBooking.Domain;
+using CinemaBooking.Domain.Movies;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CinemaBooking.Repository.Context
 {
@@ -17,7 +13,7 @@ namespace CinemaBooking.Repository.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseInMemoryDatabase(databaseName: "CinemaDb");
+            optionsBuilder.UseInMemoryDatabase(databaseName: Constants.DatabaseName);
         }
 
         public DbSet<Movie> Movies { get; set; }

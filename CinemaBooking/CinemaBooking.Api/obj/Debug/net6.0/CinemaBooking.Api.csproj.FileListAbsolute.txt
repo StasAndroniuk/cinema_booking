@@ -47,3 +47,9 @@ D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\Cine
 D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Repository.pdb
 D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Domain.pdb
 D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Infrustructure.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\AutoMapper.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Contract.Api.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Contract.Api.pdb
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Application.dll
+D:\TestTask\cinema_booking\CinemaBooking\CinemaBooking.Api\bin\Debug\net6.0\CinemaBooking.Application.pdb
