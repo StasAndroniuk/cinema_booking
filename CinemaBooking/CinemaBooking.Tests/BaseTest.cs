@@ -26,6 +26,7 @@ namespace CinemaBooking.Tests
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<ITheaterService, TheaterService>();
             services.AddScoped<IScheduledSessionService, ScheduledSessionService>();
+            services.AddScoped<IReservationService, ReservationService>();
 
             TestServiceProvider = services.BuildServiceProvider();
         }

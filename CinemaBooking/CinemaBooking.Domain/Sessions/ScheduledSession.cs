@@ -1,4 +1,5 @@
-﻿using CinemaBooking.Domain.Movies;
+﻿using CinemaBooking.Domain.Exceptions;
+using CinemaBooking.Domain.Movies;
 using CinemaBooking.Domain.Theaters;
 
 namespace CinemaBooking.Domain.Sessions
@@ -57,5 +58,24 @@ namespace CinemaBooking.Domain.Sessions
         /// Ordered sits
         /// </summary>
         public IList<OrderedSit> OrderedSits { get; private set; }
+
+        public void OrderSit(OrderedSit sit)
+        {
+            if(OrderedSits == null)
+            {
+                OrderedSits = new List<OrderedSit>();
+            }
+            OrderedSits.Add(sit);
+        }
+
+        public void ConfirmReservation(Guid sitReservationId)
+        {
+            var sit = OrderedSits.FirstOrDefault(s => s.Id == sitReservationId);
+            if(sit == null)
+            {
+                throw new SitReservationException($"Reserved sit {sitReservationId} not found");
+            }
+            sit.Confirm();
+        }
     }
 }

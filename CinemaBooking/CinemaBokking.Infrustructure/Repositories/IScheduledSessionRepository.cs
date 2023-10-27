@@ -36,7 +36,7 @@ namespace CinemaBooking.Infrustructure.Repositories
         /// <param name="startDate">Session start date</param>
         /// <param name="endDate">Session end date</param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
-        /// <returns></returns>
+        /// <returns><see cref="ScheduledSession"/></returns>
         Task<ScheduledSession?> TryFindSchedulledSessionAsync(Guid movieId, Guid theaterId, DateTime startDate, DateTime endDate, CancellationToken cancellationToken = default);
 
 
@@ -45,7 +45,7 @@ namespace CinemaBooking.Infrustructure.Repositories
         /// </summary>
         /// <param name="sessionId">Schedulled session id</param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
-        /// <returns></returns>
+        /// <returns><see cref="ScheduledSession"/></returns>
         Task<ScheduledSession?> GetScheduledSessionAsync(Guid sessionId, CancellationToken cancellationToken = default);
 
         /// <summary>
@@ -53,7 +53,30 @@ namespace CinemaBooking.Infrustructure.Repositories
         /// </summary>
         /// <param name="session">Schedulled session</param>
         /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
-        /// <returns></returns>
+        /// <returns><see cref="Task"/></returns>
         Task DeleteSchedulledSession(ScheduledSession session, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Retreaves avalible sessions for specific movie.
+        /// </summary>
+        /// <param name="movieId">Id of movie</param>
+        /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
+        /// <returns>Collection if <see cref="ScheduledSession"/></returns>
+        Task<IEnumerable<ScheduledSession>> GetAvailableSessionsAsync(Guid movieId, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Updates existing session
+        /// </summary>
+        /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
+        /// <returns><see cref="Task"/></returns>
+        Task UpdateSchedulledSessionAsync(CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Add ed new ordered sit
+        /// </summary>
+        /// <param name="sit"><see cref="OrderedSit"/></param>
+        /// <param name="cancellationToken"><see cref="CancellationToken"/></param>
+        /// <returns><see cref="Task"/></returns>
+        Task AddOrderedSitAsync(OrderedSit sit, CancellationToken cancellationToken = default);
     }
 }

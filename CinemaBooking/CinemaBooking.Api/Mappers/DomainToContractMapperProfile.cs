@@ -15,6 +15,9 @@ namespace CinemaBooking.Api.Mappers
             CreateMap<ScheduledSession, Contract.Api.Models.ScheduleSession>()
                 .ForMember(x => x.Movie, opt => opt.MapFrom(x => x.Movie))
                 .ForMember(x => x.Theater, opt => opt.MapFrom(x => x.Theater));
+            CreateMap<AvailableSit, Contract.Api.Models.AvailableSit>();
+            CreateMap<AvailableSession, Contract.Api.Models.AvailableSession>();
+            CreateMap<MovieTicket, Contract.Api.Models.MovieTicket>();
         }
     }
 }

@@ -14,6 +14,12 @@ namespace CinemaBooking.Repository
             _context = context;
         }
 
+        public async Task AddOrderedSitAsync(OrderedSit sit, CancellationToken cancellationToken = default)
+        {
+            await _context.OrderedSits.AddAsync(sit, cancellationToken);
+            await _context.SaveChangesAsync(cancellationToken);
+        }
+
         public async Task CreateSessionAsync(ScheduledSession session, CancellationToken cancellationToken = default)
         {
             await _context.ScheduledSessions.AddAsync(session, cancellationToken);
@@ -26,14 +32,22 @@ namespace CinemaBooking.Repository
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<ScheduledSession?> GetScheduledSessionAsync(Guid sessionId, CancellationToken cancellationToken = default)
-        {
-            return await _context.ScheduledSessions
+        public async Task<IEnumerable<ScheduledSession>> GetAvailableSessionsAsync(Guid movieId, CancellationToken cancellationToken = default) =>
+            await _context.ScheduledSessions
+                .Include(s => s.Movie)
+                .Include(s => s.Theater)
+                .Include(s => s.OrderedSits)
+            .Where(s => s.Movie.Id == movieId && s.StartDate > DateTime.Now)
+            .ToListAsync(cancellationToken);
+
+
+
+        public async Task<ScheduledSession?> GetScheduledSessionAsync(Guid sessionId, CancellationToken cancellationToken = default) =>
+            await _context.ScheduledSessions
                 .Include(s => s.Movie)
                 .Include(s => s.Theater)
                 .Include(s => s.OrderedSits)
                 .FirstOrDefaultAsync(s => s.Id == sessionId, cancellationToken);
-        }
 
         public async Task<ScheduledSession?> TryFindSchedulledSessionAsync(Guid movieId, Guid theaterId, DateTime startDate, DateTime endDate, CancellationToken cancellationToken = default)
         {
@@ -51,6 +65,11 @@ namespace CinemaBooking.Repository
         public async Task<ScheduledSession?> TryGetScheduledSessionAsync(Guid theaterId, CancellationToken cancellationToken = default)
         {
             return await _context.ScheduledSessions.FirstOrDefaultAsync(s => s.Theater.Id == theaterId && s.EndDate > DateTime.Now, cancellationToken);
+        }
+
+        public async Task UpdateSchedulledSessionAsync(CancellationToken cancellationToken = default)
+        {
+            await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }

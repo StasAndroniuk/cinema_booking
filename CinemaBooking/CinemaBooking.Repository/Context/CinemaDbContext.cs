@@ -23,5 +23,7 @@ namespace CinemaBooking.Repository.Context
         public DbSet<Theater> Theaters { get; set; }
 
         public DbSet<ScheduledSession> ScheduledSessions { get; set; }
+
+        public DbSet<OrderedSit> OrderedSits { get; set; }
     }
 }

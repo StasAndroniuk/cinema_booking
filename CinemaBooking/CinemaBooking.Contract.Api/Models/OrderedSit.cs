@@ -2,14 +2,19 @@
 {
     public class OrderedSit
     {
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
-        public ushort RowNumber { get; private set; }
+        public ushort RowNumber { get; set; }
 
-        public ushort SitNumber { get; private set; }
+        public ushort SitNumber { get; set; }
 
-        public bool IsReserved { get; private set; }
+        public string CustomerName { get; set; }
 
-        public bool IsConfirmed { get; private set; }
+        public string CustomerPhoneNumber { get; set; }
+
+        public bool IsReserved { get; set; }
+        public DateTime ReservedTill { get; set; }
+
+        public bool IsConfirmed { get; set; }
     }
 }

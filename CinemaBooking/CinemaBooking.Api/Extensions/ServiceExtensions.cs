@@ -33,6 +33,7 @@ namespace CinemaBooking.Api.Extensions
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<ITheaterService, TheaterService>();
             services.AddScoped<IScheduledSessionService, ScheduledSessionService>();
+            services.AddScoped<IReservationService, ReservationService>();
         }
 
         public static void ConfigureMappers(this IServiceCollection services)

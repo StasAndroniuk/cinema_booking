@@ -10,8 +10,10 @@ namespace CinemaBooking.Tests.ModelTests
         {
             var rowNumber = (ushort)1;
             var sitNumber = (ushort)1;
+            var customerName = "asdsad";
+            var number = "31212321";
 
-            var sit = new OrderedSit(rowNumber, sitNumber);
+            var sit = new OrderedSit(rowNumber, sitNumber, customerName, number);
 
             sit.Should().NotBeNull();
             sit.SitNumber.Should().Be(sitNumber);
@@ -25,8 +27,11 @@ namespace CinemaBooking.Tests.ModelTests
         {
             var rowNumber = (ushort)1;
             var sitNumber = (ushort)1;
+            var customerName = "asdsad";
+            var number = "31212321";
 
-            var sit = new OrderedSit(rowNumber, sitNumber);
+
+            var sit = new OrderedSit(rowNumber, sitNumber, customerName, number);
             sit.Reserve();
             sit.IsReserved.Should().BeTrue();
             sit.IsConfirmed.Should().BeFalse();
@@ -37,8 +42,10 @@ namespace CinemaBooking.Tests.ModelTests
         {
             var rowNumber = (ushort)1;
             var sitNumber = (ushort)1;
+            var customerName = "asdsad";
+            var number = "31212321";
 
-            var sit = new OrderedSit(rowNumber, sitNumber);
+            var sit = new OrderedSit(rowNumber, sitNumber, customerName, number);
             sit.Confirm();
             sit.IsConfirmed.Should().BeTrue();
         }

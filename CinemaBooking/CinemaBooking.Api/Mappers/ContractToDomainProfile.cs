@@ -22,6 +22,7 @@ namespace CinemaBooking.Api.Mappers
             CreateMap<CreateTheaterRequest, TheaterCreationDetails>();
             CreateMap<UpdateTheaterRequest, TheaterUpdateDetails>();
             CreateMap<CreateScheduledSessionRequest, SessionCreationDetails>();
+            CreateMap<ReserveSitRequest, ReservationDetails>();
         }
     }
 }
