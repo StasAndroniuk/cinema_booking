@@ -23,6 +23,9 @@ namespace CinemaBooking.Api.Extensions
                 case SessionInvalidOperationException:
                     context.Result = new BadRequestObjectResult(context.Exception.Message);
                     break;
+                case SitReservationException:
+                    context.Result = new BadRequestObjectResult(context.Exception.Message);
+                    break;
                 default:
                     context.Result = new ObjectResult(context.Exception.Message)
                     {
