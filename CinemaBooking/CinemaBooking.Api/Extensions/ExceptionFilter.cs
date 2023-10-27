@@ -17,6 +17,9 @@ namespace CinemaBooking.Api.Extensions
                 case MovieDuplicateException:
                     context.Result = new BadRequestObjectResult(context.Exception.Message);
                     break;
+                case TheaterInvalidOperationException:
+                    context.Result = new BadRequestObjectResult(context.Exception.Message);
+                    break;
                 default:
                     context.Result = new ObjectResult(context.Exception.Message)
                     {

@@ -1,5 +1,7 @@
 ﻿using CinemaBooking.Domain;
 using CinemaBooking.Domain.Movies;
+using CinemaBooking.Domain.Sessions;
+using CinemaBooking.Domain.Theaters;
 using Microsoft.EntityFrameworkCore;
 
 namespace CinemaBooking.Repository.Context
@@ -17,5 +19,9 @@ namespace CinemaBooking.Repository.Context
         }
 
         public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Theater> Theaters { get; set; }
+
+        public DbSet<ScheduledSession> ScheduledSessions { get; set; }
     }
 }

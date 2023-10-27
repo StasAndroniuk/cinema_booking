@@ -1,7 +1,7 @@
 ﻿using CinemaBooking.Domain.Exceptions;
 using CinemaBooking.Domain.Movies;
 using CinemaBooking.Domain.Movies.Dtos;
-using CinemaBooking.Infrustructure;
+using CinemaBooking.Infrustructure.Repositories;
 using CinemaBooking.Infrustructure.Services;
 
 

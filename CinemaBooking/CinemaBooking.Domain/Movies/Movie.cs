@@ -12,6 +12,7 @@ namespace CinemaBooking.Domain.Movies
     /// </summary>
     public class Movie
     {
+        private Movie() { }
         public Movie(string name, string description, ushort duration, MovieGenre genre)
         {
             Id = Guid.NewGuid();

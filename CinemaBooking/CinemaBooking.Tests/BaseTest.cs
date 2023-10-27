@@ -1,6 +1,7 @@
 ﻿using CinemaBooking.Application.Movies;
+using CinemaBooking.Application.Theaters;
 using CinemaBooking.Domain;
-using CinemaBooking.Infrustructure;
+using CinemaBooking.Infrustructure.Repositories;
 using CinemaBooking.Infrustructure.Services;
 using CinemaBooking.Repository;
 using CinemaBooking.Repository.Context;
@@ -19,7 +20,11 @@ namespace CinemaBooking.Tests
             services.AddDbContext<CinemaDbContext>(options => options.UseInMemoryDatabase(Constants.DatabaseName));
             services.AddScoped<IServiceContainer, ServiceContainer>();
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<ITheaterRepository, TheaterRepository>();
+            services.AddScoped<IScheduledSessionRepository, ScheduledSessionRepository>();
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<ITheaterService, TheaterService>();
+
             TestServiceProvider = services.BuildServiceProvider();
         }
         protected IServiceProvider TestServiceProvider { get; }

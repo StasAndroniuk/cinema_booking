@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using CinemaBooking.Contract.Api.Requests;
+using CinemaBooking.Contract.Api.Requests.Theaters;
 using CinemaBooking.Domain.Movies;
 using CinemaBooking.Domain.Movies.Dtos;
+using CinemaBooking.Domain.Theaters.Dtos;
 
 namespace CinemaBooking.Api.Mappers
 {
@@ -14,6 +16,9 @@ namespace CinemaBooking.Api.Mappers
 
             CreateMap<UpdateMovieRequest, MovieUpdateDetails>()
                 .ForMember(x => x.Genre, opt => opt.MapFrom(x => Enum.Parse<MovieGenre>(x.Genre)));
+
+            CreateMap<CreateTheaterRequest, TheaterCreationDetails>();
+            CreateMap<UpdateTheaterRequest, TheaterUpdateDetails>();
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using CinemaBooking.Domain.Movies;
-using CinemaBooking.Infrustructure;
+using CinemaBooking.Infrustructure.Repositories;
 using CinemaBooking.Repository.Context;
 using Microsoft.EntityFrameworkCore;
 using System;

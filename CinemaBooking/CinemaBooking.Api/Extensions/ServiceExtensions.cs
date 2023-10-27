@@ -3,10 +3,12 @@ using CinemaBooking.Repository.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using CinemaBooking.Api.Mappers;
-using CinemaBooking.Infrustructure;
 using CinemaBooking.Repository;
 using CinemaBooking.Infrustructure.Services;
 using CinemaBooking.Application.Movies;
+using CinemaBooking.Infrustructure.Repositories;
+using CinemaBooking.Application.Theaters;
+using System.ComponentModel.Design;
 
 namespace CinemaBooking.Api.Extensions
 {
@@ -25,7 +27,10 @@ namespace CinemaBooking.Api.Extensions
         public static void ConfigureApplicationServices(this IServiceCollection services)
         {
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<ITheaterRepository, TheaterRepository>();
+            services.AddScoped<IScheduledSessionRepository, ScheduledSessionRepository>();
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<ITheaterService, TheaterService>();
         }
 
         public static void ConfigureMappers(this IServiceCollection services)
