@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using CinemaBooking.Contract.Api.Requests;
+using CinemaBooking.Contract.Api.Requests.Sessions;
 using CinemaBooking.Contract.Api.Requests.Theaters;
 using CinemaBooking.Domain.Movies;
 using CinemaBooking.Domain.Movies.Dtos;
+using CinemaBooking.Domain.Sessions.Dtos;
 using CinemaBooking.Domain.Theaters.Dtos;
 
 namespace CinemaBooking.Api.Mappers
@@ -19,6 +21,7 @@ namespace CinemaBooking.Api.Mappers
 
             CreateMap<CreateTheaterRequest, TheaterCreationDetails>();
             CreateMap<UpdateTheaterRequest, TheaterUpdateDetails>();
+            CreateMap<CreateScheduledSessionRequest, SessionCreationDetails>();
         }
     }
 }

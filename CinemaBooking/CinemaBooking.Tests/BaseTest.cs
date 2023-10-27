@@ -1,4 +1,5 @@
 ﻿using CinemaBooking.Application.Movies;
+using CinemaBooking.Application.Sessions;
 using CinemaBooking.Application.Theaters;
 using CinemaBooking.Domain;
 using CinemaBooking.Infrustructure.Repositories;
@@ -24,6 +25,7 @@ namespace CinemaBooking.Tests
             services.AddScoped<IScheduledSessionRepository, ScheduledSessionRepository>();
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<ITheaterService, TheaterService>();
+            services.AddScoped<IScheduledSessionService, ScheduledSessionService>();
 
             TestServiceProvider = services.BuildServiceProvider();
         }

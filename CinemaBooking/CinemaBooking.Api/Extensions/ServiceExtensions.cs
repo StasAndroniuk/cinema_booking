@@ -9,6 +9,7 @@ using CinemaBooking.Application.Movies;
 using CinemaBooking.Infrustructure.Repositories;
 using CinemaBooking.Application.Theaters;
 using System.ComponentModel.Design;
+using CinemaBooking.Application.Sessions;
 
 namespace CinemaBooking.Api.Extensions
 {
@@ -31,6 +32,7 @@ namespace CinemaBooking.Api.Extensions
             services.AddScoped<IScheduledSessionRepository, ScheduledSessionRepository>();
             services.AddScoped<IMovieService, MovieService>();
             services.AddScoped<ITheaterService, TheaterService>();
+            services.AddScoped<IScheduledSessionService, ScheduledSessionService>();
         }
 
         public static void ConfigureMappers(this IServiceCollection services)
